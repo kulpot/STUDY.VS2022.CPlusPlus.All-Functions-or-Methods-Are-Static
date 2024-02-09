@@ -21,8 +21,10 @@ public:
 
 void main()
 {
-	Cow betsy(5);
+	Cow betsy(5); 
 	Cow georgy(78);
+	betsy.moo();
+	georgy.moo();
 }
 
 
