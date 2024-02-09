@@ -5,7 +5,21 @@ using std::endl;
 //----------------------- All Functions/Methods Are Static --------------------------------------------------
 //ref link:https://www.youtube.com/watch?v=PItm2_TZ0wA&list=PLRwVmtr-pp070AKU7G71q8XyCRttsWIvi&index=6
 
+class Cow
+{
+	int maxHeartBeats;
+public:
+	Cow(int maxBeats)
+	{
+		maxHeartBeats = maxBeats;
+	}
+};
 
+void main()
+{
+	Cow betsy(5);
+	Cow georgy(78);
+}
 
 
 
