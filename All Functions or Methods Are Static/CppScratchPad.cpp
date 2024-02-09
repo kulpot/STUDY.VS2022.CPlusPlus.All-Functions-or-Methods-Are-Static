@@ -2,36 +2,74 @@
 using std::cout;
 using std::endl;
 
+//----------------------- All Functions/Methods Are Static --------------------------------------------------
+//ref link:https://www.youtube.com/watch?v=PItm2_TZ0wA&list=PLRwVmtr-pp070AKU7G71q8XyCRttsWIvi&index=6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //----------------------- C++ const Pointers -----------------------------------------------------------------
 //ref link:https://www.youtube.com/watch?v=tFjcDICYvE0&list=PLRwVmtr-pp070AKU7G71q8XyCRttsWIvi&index=5&t=3s
 
-class Cow
-{
-public:
-	int maxHeartBeats;
-	Cow(int maxBeats)
-	{
-		maxHeartBeats = maxBeats;
-		// class_name* const this;
-		this->maxHeartBeats = 234234234;
-		this = new Cow(234234);
-	}
-};
-
-void main()
-{
-	Cow betsy(5);
-	// class_name* const this;
-	
-	Cow* betsyPtr = &betsy;
-	//Cow const* const betsyPtr = &betsy;
-	//Cow const*  betsyPtr = &betsy;
-	//Cow * const betsyPtr = &betsy;
-	betsyPtr->maxHeartBeats = 10;
-
-	Cow georgy(5000);
-	betsyPtr = &georgy;
-}
+//class Cow
+//{
+//public:
+//	int maxHeartBeats;
+//	Cow(int maxBeats)
+//	{
+//		maxHeartBeats = maxBeats;
+//		// class_name* const this;
+//		this->maxHeartBeats = 234234234;
+//		this = new Cow(234234);
+//	}
+//};
+//
+//void main()
+//{
+//	Cow betsy(5);
+//	// class_name* const this;
+//	
+//	Cow* betsyPtr = &betsy;
+//	//Cow const* const betsyPtr = &betsy;
+//	//Cow const*  betsyPtr = &betsy;
+//	//Cow * const betsyPtr = &betsy;
+//	betsyPtr->maxHeartBeats = 10;
+//
+//	Cow georgy(5000);
+//	betsyPtr = &georgy;
+//}
 
 
 
