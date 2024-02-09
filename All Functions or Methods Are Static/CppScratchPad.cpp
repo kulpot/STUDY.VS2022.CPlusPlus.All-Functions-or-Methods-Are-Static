@@ -13,9 +13,19 @@ public:
 	{
 		maxHeartBeats = maxBeats;
 	}
-	void moo()
+	//void moo()
+	//{
+	//	cout << "Mooooo " << maxHeartBeats << endl;			//the compiler defaults implicitly: "this->maxHeartBeats"
+	//}
+	
+	//static void moo()
+	static void moo(Cow * const _this)
 	{
-		cout << "Mooooo " << maxHeartBeats << endl;
+		//cout << "Moooo " << this->maxHeartBeats << endl;
+		//cout << "Moooo " << maxHeartBeats << endl;
+		cout << "Moooo " << _this->maxHeartBeats << endl;
+		//_this = new Cow(32525);	//error: _this is const which cant be modify
+		_this->maxHeartBeats = 23523523;	//can modify cause of Cow is not const //"(Cow * const _this)"
 	}
 };
 
@@ -23,8 +33,13 @@ void main()
 {
 	Cow betsy(5); 
 	Cow georgy(78);
-	betsy.moo();
-	georgy.moo();
+	//betsy.moo();
+	//georgy.moo();
+
+	//betsy.moo();
+	Cow::moo(&betsy);
+	//georgy.moo();
+	Cow::moo(&georgy);
 }
 
 
