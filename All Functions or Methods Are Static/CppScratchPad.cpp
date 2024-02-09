@@ -13,6 +13,10 @@ public:
 	{
 		maxHeartBeats = maxBeats;
 	}
+	void moo()
+	{
+		cout << "Mooooo " << maxHeartBeats << endl;
+	}
 };
 
 void main()
